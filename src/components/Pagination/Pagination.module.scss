@@ -1,3 +1,5 @@
+@import "./../colors/color.scss";
+
 .container {
   display: flex;
   align-items: center;
@@ -9,18 +11,18 @@
   }
 
   .pagesText {
-    background: #e7e1e1;
+    background: $color-light-gray;
     position: relative;
     z-index: 1;
     padding: 10px 20px;
     border-radius: 25px;
-    box-shadow: 8px 4px 10px #959595;
+    box-shadow: $color-box-shadow-btn;
     display: flex;
 
     .active {
-        background: #0068cc;
+        background: $color-primary-blue;
         border-radius: 50%;
-        color: #fff;
+        color: $color-white;
         height: 30px !important;
         line-height: 26px;
         width: 1px;

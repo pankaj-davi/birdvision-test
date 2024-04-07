@@ -1,9 +1,11 @@
+@import "../colors/color.scss";
+
 .container {
-  background: #f5f5f5;
+  background: $color-light-gray;
   border-radius: 15px;
   width: 250px;
   transition: transform 0.3s ease;
-  box-shadow: 7px 6px 10px #00000042;
+  box-shadow: $color-box-shadow-btn;
   cursor: pointer;
 
   .thumbnail {
@@ -16,7 +18,7 @@
     padding: 10px 15px;
 
     h3 {
-      color: rgb(0 0 0 / 72%);
+      color: rgb(0 0 0 / 60%);
     }
 
     .buttonContainer {

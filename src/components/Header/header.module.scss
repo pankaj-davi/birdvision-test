@@ -1,7 +1,9 @@
+@import './../colors/color.scss';
+
 .header{
-    background:#fff;
+    background:$color-white;
     padding: 5px 20px;
-    box-shadow: 10px 10px 10px #00000012;
+    box-shadow: $color-box-shadow-btn;
     position: sticky;
     top:0;
     z-index: 10;
