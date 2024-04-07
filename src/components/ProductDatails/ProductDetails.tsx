@@ -42,7 +42,7 @@ const ProductDetails = () => {
                 </div>
                 <div className={styles.product_details}>
                     <h2>{title}</h2>
-                    <Rating initialRating={rating.toFixed(1)} />
+                    <Rating initialRating={rating} />
                     <hr />
                     <div className={styles.product_price}>
                         <strong>
