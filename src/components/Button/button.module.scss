@@ -1,0 +1,41 @@
+.btn_primary {
+  border-radius: 4px;
+  background-color: #0068cc;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+  &:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  &:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  &:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

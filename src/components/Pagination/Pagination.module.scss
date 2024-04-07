@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  span {
+    padding: 0px 20px;
+    cursor: pointer;
+  }
+
+  .pagesText {
+    background: #e7e1e1;
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 8px 4px 10px #959595;
+    display: flex;
+
+    .active {
+        background: #0068cc;
+        border-radius: 50%;
+        color: #fff;
+        height: 30px !important;
+        line-height: 26px;
+        width: 1px;
+        padding-left: 11px
+    }
+  }
+
+  button {
+    width: 60px;
+    margin: 10px;
+  }
+}

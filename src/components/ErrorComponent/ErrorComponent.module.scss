@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .error {
+    width: 100%;
+    text-align: center;
+    background-color: #ffe6e6;
+    border: 1px solid #ff8080;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+  .message {
+    color: #ff3333;
+    font-weight: bold;
+  }
+}
