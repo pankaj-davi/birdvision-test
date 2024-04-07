@@ -9,7 +9,7 @@ import LoadingSpinner from "../Spinner/Spinner";
 
 import styles from './productList.module.scss';
 
-const ProductList = () => {
+const ProductList = ({ pageination = true }) => {
     const [page, setPage] = useState(1)
     const { data, isError, isPending }: any = useFetch(`https://dummyjson.com/products`, page, 10)
 
@@ -20,9 +20,11 @@ const ProductList = () => {
             <div className={styles.product_List}>
                 {data?.products?.map((item: ProductType) => <ProductCard {...item} key={item.id} />)}
             </div>
-            <div>
-                <Pagination setPage={setPage} currentPage={page} totalItems={data.total} pagePerItem={10} />
-            </div>
+            {pageination &&
+                <div>
+                    <Pagination setPage={setPage} currentPage={page} totalItems={data.total} pagePerItem={10} />
+                </div>
+            }
         </div>
     )
 }

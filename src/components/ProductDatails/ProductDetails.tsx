@@ -8,6 +8,7 @@ import styles from './productDetails.module.scss'
 import SliderImages from "../slider/SliderImages";
 import Rating from "../Rating/Rating";
 import Button from "../Button/Button";
+import ProductList from "../ProductList/ProductList";
 
 
 const ProductDetails = () => {
@@ -63,6 +64,10 @@ const ProductDetails = () => {
                     </div>
                     <Button>{'Add To Cart'}</Button>
                 </div>
+            </div>
+            <div className={styles.related_product}>
+                <h2>{"More related products"}</h2>
+                <ProductList pageination={false} />
             </div>
         </>
     );
